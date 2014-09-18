@@ -846,7 +846,7 @@ instance.web.FormView = instance.web.View.extend(instance.web.form.FieldManagerM
                     if (!f.get("readonly")) {
                         values[f.name] = f.get_value();
                     } else {
-                        readonly_values[f.name] = f.get_value();
+                        values[f.name] = f.get_value();
                     }
                 }
             }
